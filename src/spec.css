@@ -249,3 +249,12 @@ button, a, [role="button"] { touch-action: manipulation; }
 /* no shadows on buttons */
 .app button, .app .main, .app .ghost { box-shadow: none !important; }
 .fsheet .opts button.on { box-shadow: inset 0 0 0 1.5px #7552fe !important; }
+
+/* details hero: brand + title sit on the bottom edge of the photo, so a two-line title grows upwards instead of covering the chips */
+.dd-hero .info { top: auto; bottom: 72px; }
+
+/* tab bar: pure white labels and icons, never faded */
+.tabbar .tab, .tabbar .tab.on, .tabbar .tab-label { color: #ffffff !important; opacity: 1 !important; }
+.tabbar .tab-label { text-shadow: 0 1px 3px rgba(20, 17, 31, 0.45); }
+.tabbar .tab-ico { filter: drop-shadow(0 1px 2px rgba(20, 17, 31, 0.35)); opacity: 1; }
+.tabbar-bg { background: rgba(24, 20, 38, 0.72); }
