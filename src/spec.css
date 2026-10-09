@@ -1,0 +1,210 @@
+/* ===== Pixel spec — measured from the Figma section (113:728 … 113:1416). Loaded last so it wins. ===== */
+
+/* ---------- Join flow (full-screen steps) ---------- */
+.fl { padding: calc(var(--sb, 0px) + 16px) 16px 0; }
+.fl-top { gap: 26px; margin: 0 0 24px; justify-content: flex-start; height: 32px; }
+.fl-top .rd { width: 32px; height: 32px; }
+.fl-top .bar { flex: none; width: 256px; height: 5px; }
+.fl-top .cnt { width: 29px; text-align: end; font-size: 12px; line-height: 15px; }
+.fl-body { padding-bottom: 0; }
+.fl-pane { display: flex; flex-direction: column; gap: 0; }
+.fl h3 { font-size: 24px; line-height: normal; margin: 0 0 8px; }
+.fl .sub { font-size: 14.5px; line-height: 22px; margin: 0 0 24px; }
+.fl-pane.center .sub { margin-bottom: 20px; }
+.fl-actions { padding: 12px 0 32px; }
+.fl-actions .two { gap: 12px; grid-template-columns: 1fr 1fr; }
+
+/* step 1: platform rows 369×68, gap 12 */
+.fl .list { gap: 12px; margin-top: 0; }
+.fl .opt { gap: 8px; padding: 16px; height: 68px; }
+.fl .opt .ic { width: 34px; height: 34px; }
+
+/* step 2: connect hero */
+.fl-hero { gap: 16px; padding: 36px 16px; }
+.fl-hero .big { width: 68px; height: 68px; }
+.fl-hero b { font-size: 17px; line-height: normal; }
+.fl-hero small { margin-top: -8px; font-size: 12.5px; line-height: 15px; }
+.fl-hero:has(.ring) { padding: 24px 16px; }
+.fl-hero .again { margin-top: 0; height: 45px; max-width: none; width: 100%; font-size: 14px; }
+.fl-hero .ring b, .fl-hero:has(.ring) > b { font-size: 16px; }
+.fl-acct { padding: 17px 12px; gap: 12px; margin-bottom: 12px; }
+.fl-acct:last-of-type { margin-bottom: 0; }
+.fl-acct .av { width: 46px; height: 46px; }
+.fl-acct div { gap: 3px; }
+.fl-acct b { font-size: 15px; line-height: normal; }
+.fl-acct small { font-size: 12px; line-height: 17px; }
+
+/* step 3: personal link + where cards */
+.fl-copy { padding: 14px; gap: 6px; border-radius: 14px; }
+.fl-copy .lbl { font-size: 11.5px; line-height: 15px; }
+.fl-copy code { font-family: 'Inter', -apple-system, system-ui, sans-serif; font-size: 14px; font-weight: 700; line-height: 17px; }
+.fl-copy button { height: 31px; padding: 0 14px 0 12px; font-size: 12.5px; gap: 6px; }
+.fl-accts { margin-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+.fl-where { padding: 13px 12px 13px 14px; gap: 8px; border-radius: 16px; }
+.fl-where .pi { width: 34px; height: 34px; }
+.fl-where div { gap: 2px; }
+.fl-where b { font-size: 14px; line-height: 17px; }
+.fl-where small { font-size: 12px; line-height: 17px; }
+
+/* step 4: send link */
+.fl-mini { gap: 12px; align-items: center; margin: 0 0 24px; }
+.fl-mini b { font-size: 14px; line-height: 17px; }
+.fl-mini .fl-pill { margin-top: 8px; }
+.fl-field { gap: 12px; margin-bottom: 24px; }
+.fl-lbl { height: 28px; }
+.fl-lbl b { font-size: 14px; line-height: 17px; }
+.fl-in { height: 44px; padding: 0 6px 0 12px; border-radius: 14px; }
+.fl-in input { height: 100%; font-size: 13.5px; }
+.fl-hint { margin: -12px 0 20px; }
+.fl-chkt { margin: 0 0 12px; }
+.fl-chk { gap: 12px; padding: 0; }
+.fl-chk li { gap: 8px; font-size: 13px; line-height: 16px; }
+.fl-chk .ck { width: 20px; height: 20px; }
+
+/* ---------- Discover ---------- */
+.d-main { gap: 24px; margin-top: 16px; }
+.d-list .row { padding-bottom: 0; }
+.d-list h2 { line-height: normal; }
+
+/* ---------- Tab bar ---------- */
+.tabbar { padding: 17.5px 24px; }
+.tab { height: 52px; }
+.tab-sel { inset: 0; }
+
+/* ---------- Campaign details ---------- */
+.dd .bullets li img { margin-top: 0; }
+.dd-head.sm { padding: 12px 16px; }
+.dd-cta { padding-bottom: 25px; }
+
+/* fixes after measuring against Figma */
+.fl .list { padding: 0; margin: 0; }
+.fl-acct { padding: 12px; }
+.fl-mini > div { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.d-list h2 { line-height: 19px; }
+.dd-card .cols small { line-height: 14px; }
+.dd-card .cols b { line-height: 19px; }
+.dd-card .ph { line-height: 17px; }
+.fl-where { padding-top: 12px; padding-bottom: 12px; }
+
+/* ===== buttons: always centred ===== */
+.fl-actions button, .fl-actions .main, .fl-actions .ghost { display: grid; place-items: center; text-align: center; padding: 0 16px; }
+
+/* ===== account card like Figma: photo + app badge ===== */
+.fl-acct { border-radius: 12px; background: rgba(247, 246, 251, 0.24); border-color: rgba(230, 227, 238, 0.5); }
+.fl-acct .av { position: relative; width: 46px; height: 46px; border-radius: 23px; background: none; display: block; flex: none; }
+.fl-acct .av > img { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 23px; object-fit: cover; }
+.fl-acct .av .bd { position: absolute; right: -1px; bottom: -1px; width: 16px; height: 16px; border-radius: 5px; background: #fff; display: grid; place-items: center; overflow: hidden; box-shadow: 0 0 0 1.5px #fff; }
+.fl-acct .av .bd img { width: 100%; height: 100%; display: block; }
+.fl-acct b { font-size: 16px; font-weight: 500; }
+
+/* ===== send step: the riyal icon must not inherit the 48px thumbnail size ===== */
+.fl-mini > img { width: 48px; height: 48px; }
+.fl-pill img { width: 12px; height: 13px; border-radius: 0; flex: none; }
+
+/* ===== success screen: centred ===== */
+.fl-body:has(.center) { display: flex; }
+.fl-pane.center { flex: 1; align-items: center; justify-content: center; text-align: center; padding: 0; position: relative; }
+.fl-pane.center h3 { margin-top: 24px; }
+.fl-pane.center .seal { margin: 0; }
+.fl-pane.center .fl-earn { margin-top: 4px; }
+
+/* ===== verifying v3: progress ring + plain-language steps ===== */
+.fl-body:has(.vf2) { display: flex; }
+.vf2 { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-bottom: 24px; }
+.ring2 { position: relative; width: 148px; height: 148px; margin-bottom: 28px; }
+.ring2 svg { transform: rotate(-90deg); display: block; }
+.ring2 .trk { fill: none; stroke: #ece9f4; stroke-width: 9; }
+.ring2 .val { fill: none; stroke: #7552fe; stroke-width: 9; stroke-linecap: round; stroke-dasharray: 326.7; transition: stroke-dashoffset 0.8s cubic-bezier(0.22, 1, 0.36, 1), stroke 0.4s; }
+.ring2.done .val { stroke: #10b981; }
+.ring2 .mid { position: absolute; inset: 0; display: grid; place-items: center; }
+.ring2 .mid b { font-size: 30px; font-weight: 700; letter-spacing: -1px; color: #14111f; }
+.ring2 .okc { width: 70px; height: 70px; border-radius: 50%; background: #10b981; color: #fff; display: grid; place-items: center; box-shadow: 0 14px 30px -12px rgba(16, 185, 129, 0.7); }
+.vf2 h3 { margin: 0 0 8px; }
+.vf2 .sub { margin: 0 0 28px; max-width: 280px; }
+.steps2 { list-style: none; width: 100%; display: flex; flex-direction: column; gap: 10px; text-align: start; }
+.steps2 li { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #e6e3ee; border-radius: 16px; background: #fff; transition: border-color 0.3s, background 0.3s, opacity 0.3s; opacity: 0.55; }
+.steps2 li.now { opacity: 1; border-color: #7552fe; background: #f6f3ff; }
+.steps2 li.ok { opacity: 1; }
+.steps2 .ic { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; flex: none; background: #efedf6; color: #6f6a80; font-size: 12px; font-weight: 700; transition: background 0.3s, color 0.3s; }
+.steps2 li.ok .ic { background: #10b981; color: #fff; }
+.steps2 li.now .ic { background: #fff; box-shadow: 0 0 0 1.5px #7552fe; }
+.steps2 .ic em { font-style: normal; }
+.steps2 .sp { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #d6d1e2; border-top-color: #7552fe; animation: flspin 0.7s linear infinite; }
+.steps2 div { display: grid; gap: 2px; min-width: 0; }
+.steps2 b { font-size: 14px; font-weight: 600; color: #14111f; line-height: 18px; }
+.steps2 small { font-size: 12px; line-height: 16px; color: #6f6a80; }
+
+/* ===== riyal symbol instead of "SAR" ===== */
+.riyal { display: inline-block; flex: none; vertical-align: -0.12em; background: currentColor; -webkit-mask: url(/assets/d/riyal.svg) center / contain no-repeat; mask: url(/assets/d/riyal.svg) center / contain no-repeat; }
+.fl .sub b.rl { display: inline-flex; align-items: center; gap: 3px; vertical-align: baseline; color: #047857; font-weight: 600; }
+.fl-earn div { align-items: center; gap: 8px; }
+.fl-earn .riyal { color: #6f6a80; }
+.balance b { display: inline-flex; align-items: center; }
+
+/* verifying list: reset the default list indent so it is centred like Figma */
+.steps2 { padding: 0; margin: 0; }
+
+/* ===== animated check marks (the stroke draws itself) ===== */
+.tick { display: block; overflow: visible; }
+.tick path { stroke-dasharray: 26; stroke-dashoffset: 26; animation: tickdraw 0.38s 0.12s cubic-bezier(0.65, 0, 0.35, 1) forwards; }
+@keyframes tickdraw { to { stroke-dashoffset: 0; } }
+@keyframes tickpop { 0% { transform: scale(0.5); } 60% { transform: scale(1.18); } 100% { transform: scale(1); } }
+@keyframes ringpulse { 0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45); } 100% { box-shadow: 0 0 0 26px rgba(16, 185, 129, 0); } }
+.steps2 li.ok .ic { background: #10b981; color: #fff; animation: tickpop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.ring2.done { border-radius: 50%; animation: ringpulse 0.9s ease-out; }
+.ring2 .okc { color: #fff; animation: tickpop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.ring2.done .val { stroke: #10b981; }
+
+/* in-place checks on the send screen */
+.fl-chk li.now { color: #14111f; }
+.fl-chk li.now .ck { border-color: #7552fe; }
+.fl-chk li.ok .ck { background: #10b981; border-color: #10b981; color: #fff; animation: tickpop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.fl-chk .sp { width: 11px; height: 11px; border-radius: 50%; border: 2px solid #d6d1e2; border-top-color: #7552fe; animation: flspin 0.7s linear infinite; }
+.fl-actions button:disabled { opacity: 1; }
+.fl-actions .ghost:disabled { color: #a09bb0; }
+.fl-in input:disabled { color: #14111f; }
+
+/* send screen exactly as designed: empty field, first check darker, others lighter */
+.fl-in { padding: 0 13px; }
+.fl-pill small { font-size: 11px; }
+.fl-chk li { color: #a09bb0; }
+.fl-chk li:first-child { color: #14111f; }
+.fl-chk li.ok, .fl-chk li.now { color: #14111f; }
+
+/* Final page: platform rows without grey chips, bio card with the full-size app icon, success = icon only */
+.fl .opt .ic { background: none; width: 34px; height: 34px; }
+.fl-where .pi { background: none; width: 34px; height: 34px; }
+.fl-pane.center .winicon { margin: 0 0 16px; }
+.fl-pane.center h3 { margin: 0 0 8px; }
+.fl-pane.center .sub { margin: 0; max-width: 352px; }
+
+/* Submit post — Figma Final: 99×74 thumbnail, dashed line, 24px label row, 12px text */
+.fl-mini { gap: 12px; margin: 0 0 16px; align-items: center; }
+.fl-mini > img { width: 99px; height: 74px; border-radius: 10px; }
+.fl-mini .fl-pill { margin-top: 12px; }
+.fl-sep { height: 0; margin: 0 0 24px; background: none; border-top: 1px dashed #e6e3ee; }
+.fl-lbl { height: 24px; }
+.fl-lbl .pi { width: 24px; height: 24px; background: none; }
+.fl-in input { font-size: 12px; }
+.fl-chk { gap: 16px; }
+.fl-chk li { font-size: 12px; line-height: 15px; }
+.fl-pane.center .sub { font-size: 14px; }
+
+/* demo helper for client reviews: fills a valid example link */
+.fl-in { padding: 0 6px 0 13px; }
+.fl-in .demo { flex: none; height: 30px; padding: 0 12px; border-radius: 999px; background: #efedf6; font-size: 12px; font-weight: 600; color: #14111f; }
+.fl-in .demo:disabled { opacity: 0.5; }
+
+/* check marks on the send screen: no half-faded state — the circle turns green at once, then the tick draws */
+.fl-chk .ck { transition: none; position: relative; }
+.fl-chk li.now .ck { border-color: #7552fe; background: #fff; }
+.fl-chk li.ok .ck { background: #10b981; border-color: #10b981; animation: ckpop 0.32s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.fl-chk li.ok .tick path { animation-delay: 0.06s; animation-duration: 0.3s; }
+@keyframes ckpop { 0% { transform: scale(0.7); } 100% { transform: scale(1); } }
+.fl-chk li { transition: color 0.2s; }
+
+
+/* ===== buttons: corner radius 16 like the Figma Final screens (Copy, Connecting, Filters, back/open circles stay round) ===== */
+.fl-actions button, .fl-actions .main, .fl-actions .ghost { border-radius: 16px; }
+.dd-cta button { border-radius: 16px; }
+.d-view { border-radius: 16px; }

@@ -1,0 +1,43 @@
+/* ===== Campaign details — pixel spec from Figma 61:1236 ===== */
+.dd { background: #fff; font-family: 'Inter', -apple-system, system-ui, sans-serif; overflow: hidden; }
+.dd-scroll { position: absolute; inset: 0; overflow-y: auto; overflow-x: hidden; padding-bottom: 130px; scrollbar-width: none; }
+.dd-scroll::-webkit-scrollbar { display: none; }
+.dd-hero { position: relative; height: 348px; overflow: hidden; background: #f7f6fb; margin-bottom: 16px; }
+.dd-hero .cover { position: absolute; left: 0; top: 0; width: 100%; height: 299px; object-fit: cover; border-top-right-radius: 16px; }
+.dd-hero .shade { position: absolute; left: 0; top: 0; width: 100%; height: 300px; background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 30%, rgba(10, 8, 18, 0.88) 100%); }
+.dd-bar { position: absolute; z-index: 9; pointer-events: none; left: 16px; right: 16px; top: 62px; display: flex; justify-content: space-between; align-items: flex-start; }
+.dd-bar .back { display: flex; align-items: center; gap: 4px; padding: 8px 12px 8px 8px; border-radius: 999px; background: rgba(255, 255, 255, 0.88); font-size: 13px; font-weight: 600; color: #14111f; }
+.dd-bar .link { width: 34px; height: 34px; border-radius: 17px; background: rgba(20, 17, 31, 0.55); display: grid; place-items: center; }
+.dd-hero .info { position: absolute; left: 16px; right: 16px; top: 219px; display: flex; flex-direction: column; gap: 8px; color: #fff; }
+.dd-hero .brand { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
+.dd-hero h1 { font-size: 20px; line-height: 25px; font-weight: 700; letter-spacing: -0.4px; }
+.dd-chips { position: absolute; display: flex; gap: 8px; align-items: center; left: 0; right: 0; top: 300px; height: 48px; padding: 0 16px; background: #f7f6fb; }
+.dd-chips span { padding: 8px 14px; border-radius: 999px; background: #fff; border: 1px solid #e6e3ee; font-size: 12px; font-weight: 600; color: #14111f; }
+.dd-plats { display: flex; gap: 12px; padding: 0 16px; scroll-padding-left: 16px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
+.dd-plats::-webkit-scrollbar { display: none; }
+.dd-card { background: #fff; border: 1px solid #e6e3ee; border-radius: 16px; overflow: hidden; }
+.dd-card.pcard { flex: 0 0 300px; scroll-snap-align: start; }
+.dd-card .ph { display: flex; align-items: center; gap: 8px; padding: 13px 16px; font-size: 14px; font-weight: 600; color: #14111f; }
+.dd-plat { width: 16px; height: 16px; border-radius: 15px; background: rgba(239, 237, 246, 0.5); display: inline-grid; place-items: center; overflow: hidden; }
+.dd-card .cols { display: flex; border-top: 1px solid #e6e3ee; }
+.dd-card .cols > div { flex: 1; min-width: 1px; display: flex; flex-direction: column; gap: 8px; padding: 12px 8px 14px 14px; }
+.dd-card .cols > div + div { border-left: 1px solid #e6e3ee; }
+.dd-card .cols small { font-size: 11.5px; color: #6f6a80; white-space: nowrap; }
+.dd-card .cols b { display: flex; align-items: center; gap: 4px; font-size: 16px; font-weight: 700; color: #14111f; }
+.dd-stack { display: flex; flex-direction: column; gap: 16px; padding: 16px 16px 0; }
+.dd-head { display: flex; align-items: center; gap: 8px; padding: 14px 16px; font-size: 14px; font-weight: 600; color: #14111f; border-bottom: 1px solid #e6e3ee; }
+.dd .bullets { display: flex; flex-direction: column; gap: 10px; padding: 16px; list-style: none; }
+.dd .bullets li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; font-weight: 500; line-height: 20px; color: #14111f; }
+.dd .bullets li img { width: 5px; height: 12px; flex: none; margin-top: 4px; }
+.dd .reqs { display: flex; flex-direction: column; gap: 12px; padding: 16px; list-style: none; }
+.dd .reqs li { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: #14111f; }
+.dd .reqs i { width: 22px; height: 22px; border-radius: 11px; display: grid; place-items: center; flex: none; }
+.dd .reqs i.y { background: #e7f8f1; }
+.dd .reqs i.n { background: #ffe9ee; }
+.dd .ref { display: flex; align-items: center; gap: 10px; padding: 14px 16px; font-size: 14px; font-weight: 600; color: #14111f; text-decoration: none; }
+.dd .ref b { flex: 1; font-weight: 600; }
+.dd-cta { position: absolute; z-index: 8; left: 0; right: 0; bottom: 0; padding: 40px 16px 34px; pointer-events: none; background: linear-gradient(rgba(255, 255, 255, 0), #fff 65%); }
+.dd-cta button { pointer-events: auto; width: 100%; height: 56px; border-radius: 999px; background: #7552fe; color: #fff; font-size: 16px; font-weight: 600; box-shadow: 0 14px 30px -10px rgba(117, 82, 254, 0.6); transition: transform 0.2s var(--ease); }
+.dd-cta button:active { transform: scale(0.98); }
+
+.dd-bar .back, .dd-bar .link { pointer-events: auto; }
