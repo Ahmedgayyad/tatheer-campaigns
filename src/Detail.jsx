@@ -43,7 +43,7 @@ export default function Detail({ c, joined, onClose, onStart }) {
         <div className="shade" />
         <div className="info">
           <span className="brand">
-            <span className="d-logo" style={{ width: 22, height: 22 }}><img className="bg" src={A + 'logo-bg.png'} alt="" /><img className="fg" src={c.logo} alt="" /></span>
+            <span className="d-logo" style={{ width: 22, height: 22 }}><img className="bg" src={A + 'logo-bg.webp'} alt="" /><img className="fg" src={c.logo} alt="" /></span>
             {c.brand}
           </span>
           <h1>{c.title}</h1>

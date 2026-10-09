@@ -16,7 +16,7 @@ const Platform = ({ id, small }) => (
 
 const Logo = ({ src, size = 20 }) => (
   <span className="d-logo" style={{ width: size, height: size }}>
-    <img className="bg" src={A + 'logo-bg.png'} alt="" />
+    <img className="bg" src={A + 'logo-bg.webp'} alt="" />
     <img className="fg" src={src} alt="" />
   </span>
 )
@@ -51,7 +51,7 @@ function Hero({ c, onOpen }) {
     >
       <div className="d-poster">
         <img className="poster" src={c.img} alt="" />
-        <div className="shade"><img src={A + 'poster-shade.png'} alt="" /></div>
+        <div className="shade"><img src={A + 'poster-shade.webp'} alt="" /></div>
         <img className="pager" src={A + 'pager.svg'} alt="" />
         <Earn v={c.pay} style={{ position: 'absolute', left: 12, top: 9, background: 'rgba(231,248,241,.7)' }} />
         <div className="copy">
@@ -86,7 +86,7 @@ function Card({ c, i, onOpen }) {
       whileTap={{ scale: 0.985 }}
     >
       <div className="cv">
-        <img src={c.img} alt="" />
+        <img src={c.img} alt="" loading="lazy" decoding="async" />
       </div>
       <div className="body">
         <div className="hd">
