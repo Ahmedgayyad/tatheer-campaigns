@@ -245,3 +245,7 @@ button, a, [role="button"] { touch-action: manipulation; }
 
 /* keep hero + filter on the same 16px gutters as the card rows at any phone width (370px at the 402px design) */
 .d-hero, .d-filter { width: calc(100% - 32px); max-width: none; }
+
+/* no shadows on buttons */
+.app button, .app .main, .app .ghost { box-shadow: none !important; }
+.fsheet .opts button.on { box-shadow: inset 0 0 0 1.5px #7552fe !important; }
