@@ -7,7 +7,7 @@ const BEZEL = 12
 // على الشاشات الكبيرة: موكب iPhone 17 (402×874) يتصغّر ليناسب الشاشة. على الموبايل: ملء الشاشة بدون إطار.
 function useFrameMode() {
   const calc = () => ({
-    framed: window.innerWidth >= 520,
+    framed: window.innerWidth >= 520 && window.matchMedia("(hover: hover) and (pointer: fine)").matches,
     scale: Math.min(1, (window.innerHeight - 24) / (H + BEZEL * 2), (window.innerWidth - 24) / (W + BEZEL * 2)),
   })
   const [s, setS] = useState(calc)
