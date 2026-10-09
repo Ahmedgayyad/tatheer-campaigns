@@ -208,3 +208,6 @@
 .fl-actions button, .fl-actions .main, .fl-actions .ghost { border-radius: 16px; }
 .dd-cta button { border-radius: 16px; }
 .d-view { border-radius: 16px; }
+
+/* the three checks read the same: dark text from the start */
+.fl-chk li, .fl-chk li:first-child, .fl-chk li.now, .fl-chk li.ok { color: #14111f; }
